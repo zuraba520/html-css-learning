@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>გიორგი ზურაბაშვილი</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>all about tea</title>
+</head>
+<body>
+    <header><!--ნავიგაცია-->
+        <h1>all about tea</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="makingtea.html">making tea</a></li>
+                <li><a href="Teaproduction.html">tea production</a></li>
+                <li><a href="Typesoftea.html">types of tea</a></li>
+                <li><a href="Dryingoftea.html">drying of tea</a></li>
+                <li><a href="about.html">about us</a></li>
+            </ul>
+        </nav>
+    </header><!--ახლა ზოგადი ინფორმაცია ჩაიზე-->
+    <h1>about us</h1>
+    <aside>
+        <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Lipton-mug-tea.jpg"width="200" alt="a cup of tea"/>
+            <br>
+            <br>
+            <img src="https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/324771_1100-800x825.jpg" width="200" alt="a cup of tea"/>
+        </figure>
+    </aside>
+    <from action="tea-about.php" method="post">
+    <fieldset>
+    <legend>Personal information</legend><br>
+    your name
+    <input type="text" name="name" required size="40"/>
+    <br><br>
+    your Last name
+    <input type="text" name="surname" required size="40"/>
+    <br><br>
+    Email Address
+    <input type="email" name="email" required placeholder="enter a valid email address" size="40"/>
+    <br><br>
+        <button type="submit">Save</button>
+    </fieldset>
+    <fieldset>
+    <legend>Your Tea Preferences</legend>
+    Tell us your tea preparation methods.<br>
+    <textarea name="preparation" cols="50" rows="7"></textarea>
+    <br><br>
+    Do you dry tea yourself?<br>
+    <input type="radio" name="dry" value="yes"/>yes<br>
+    <input type="radio" name="dry" value="no"/>no<br>
+
+    how do you drink your tea?<br>
+    <input type="checkbox" name="drink" value="sugar"/>with shugar<br>
+    <input type="checkbox" name="drink" value="sugar"/>without sugar<br>
+    <br>
+    What is your favorite tea drink?<br>
+    <select name="favorite">
+        <option value="">please select a drink</option>
+        <option value="Black">Black tea</option>
+        <option value="Green">Breen tea</option>
+        <option value="Oolong">Oolong tea</option>
+        <option value="White">White tea</option>
+        <option value="Mint">Maghrebi mint tea</option>
+    </select>
+    </fieldset>
+    </from>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="makingtea.html">making tea</a></li>
+                <li><a href="Teaproduction.html">tea production</a></li>
+                <li><a href="Typesoftea.html">types of tea</a></li>
+                <li><a href="Dryingoftea.html">drying of tea</a></li>
+                <li><a href="#">about us</a></li>
+            </ul>
+        </nav>
+     </footer>
+    </body>
+    </html>
+
+<!-- 
+<?php
+// database connection file
+$databaseHost = 'localhost';//
+$databaseName = 'GZ'; //
+$databaseUsername = 'root'; // 
+$databasePassword = '';  // by defualt empty for localhost
+
+$cser = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName);
+
+
+if(isset($_POST['Submit'])) {
+$user_name = $_POST['name'];
+$user_surname = $_POST['surname'];
+$user_email = $_POST['email'];
+
+$result = mysqli_query($cser, "INSERT INTO crud2(user_name,user_surname,user_email) VALUES('$user_name','$user_surname','$user_email')");
+console.log($result);
+}
+?> -->

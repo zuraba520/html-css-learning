@@ -1,0 +1,80 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'indine flower', cursive;
+    margin: 0 auto;
+    width: 960px;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+nav li{
+    display: inline;
+    float: left;
+}
+div{
+    width: 500px;
+    margin: 20px;
+    padding: 30px 20px 10px;
+}
+aside{
+    width: 280px;
+    float: right;
+    background-color: tan;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+    margin-left: 20px;
+}
+header h1{
+    color: rgb(256, 256,256,.8);
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 50px;
+}
+footer{
+    margin: 40px 0;
+}
+footer nav a:hover{
+    color: brown;
+}
+footer nav a:link,footer nav a:visited{
+    color: gray;
+    text-decoration: none;
+    display: block;
+    width: 160px;
+    text-align: center;
+    background-color:white;
+}
+nav a:hover{
+    background-color: black;
+}
+nav a:link,nav a:visited{
+    background-color: brown;
+    color: rgb(218, 151, 27);
+    display: block;
+    width: 160px;
+    text-align: center;
+    padding: 10px 0;
+}
+a:link,a:visited{
+    text-decoration: none;
+    color:rgb(148, 144, 144);
+    font-weight: bold;
+}
+h1,h2,h3{
+    color: brown;
+}
+a:hover{
+    color: brown;
+}
+.photo-left{
+    float:left;
+    margin: right 20px;
+}
+header{
+    background-image: url(https://kgdshgoixg1vrh3sdpjwgidf-wpengine.netdna-ssl.com/wp-content/uploads/2019/10/decaf-tea-effects-sunday-edit.jpg);
+    height: 100px;
+    margin: bottom 70px;
+}
+
